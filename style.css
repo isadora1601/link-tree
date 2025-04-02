@@ -12,18 +12,71 @@
 :root {
     --black: #141414;
     --dark-grey: #1F1F1F;
-    --white: #fff; 
+    --white: #fff;
+    --neon-pink: #ff10f0; 
+    --light-pink: #ffb6c1;
 }
 
 body {
     background-color: var(--black);
-    border: 1px solid pink;
-
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+
 }
 
 div {
     background-color:var(--dark-grey);
     color: var(--white);
     width: 384px;
+    text-align: center;
+    border-radius: 12px;
+    padding: 40px;
+}
+
+img {
+    width: 88px;
+    border-radius: 50%;
+    margin-bottom: 24px;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 600px;
+    margin-bottom: 4px;
+}
+
+strong{
+    color: var( --neon-pink);
+    font-size: 14px;
+}
+
+p {
+    margin-block: 24px;
+    font-size: 14px;
+}
+
+ul, li {
+    list-style: none;
+}
+
+a {
+    display: block;
+    background-color: var(--light-pink);
+    margin-bottom: 16px;
+    padding: 12px;
+    color: var(--black);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 8px;
+}
+
+a:hover {
+    background-color: var(--neon-pink);
+    color: var(--dark-grey);
+    transition: 0.4s;
 }
